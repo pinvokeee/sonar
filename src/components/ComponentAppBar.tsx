@@ -47,7 +47,7 @@ export default class ComponentAppBar extends React.Component
         }));
 
         return (
-            <MUI.AppBar color="primary" position="static" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+            <MUI.AppBar color="primary" position="static" sx={{ boxShadow: "none", zIndex: (theme) => theme.zIndex.drawer - 1 }}>
                 <MUI.Toolbar>
                 
                 <MUI.Typography variant="h6" component="div">SONAR</MUI.Typography>

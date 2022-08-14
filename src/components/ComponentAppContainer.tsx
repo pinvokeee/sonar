@@ -13,26 +13,27 @@ export default class ComponentAppContainer extends React.Component
     
     render(): React.ReactNode 
     {
-
-        const Root = styled("div")(({ theme }) => 
+        const Container = styled("div")(({ theme }) => 
         ({
             display: "flex",
 
             [theme.breakpoints.down('sm')]: 
             {
-                backgroundColor: "red",
+                // backgroundColor: "red",
                 height: `calc(100vh - 56px)`,
             },
             
             [theme.breakpoints.up('sm')]: 
             {
-                backgroundColor: "blue",
+                // backgroundColor: "blue",
                 height: `calc(100vh - 64px)`,
             },
         }));
 
+        const aa = <div>dada</div>;
+
         return (
-            <Root>
+            <Container>
                 <MUI.Grid container>
                     <MUI.Grid xs={8} sx={{ height: "100%",  overflow: "auto" }}>
                         <MUI.Stack>
@@ -89,7 +90,7 @@ export default class ComponentAppContainer extends React.Component
                         </MUI.Stack>
                     </MUI.Grid>
                 </MUI.Grid>
-            </Root>
+            </Container>
         )
     }
 }
